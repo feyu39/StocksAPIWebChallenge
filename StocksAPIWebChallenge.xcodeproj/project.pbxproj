@@ -9,12 +9,16 @@
 /* Begin PBXBuildFile section */
 		E987470525E5726E0062E9BF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E987470425E5726E0062E9BF /* AppDelegate.swift */; };
 		E987470725E5726E0062E9BF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E987470625E5726E0062E9BF /* SceneDelegate.swift */; };
-		E987470925E5726E0062E9BF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E987470825E5726E0062E9BF /* ViewController.swift */; };
 		E987470C25E5726E0062E9BF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E987470A25E5726E0062E9BF /* Main.storyboard */; };
 		E987470E25E572780062E9BF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E987470D25E572780062E9BF /* Assets.xcassets */; };
 		E987471125E572780062E9BF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E987470F25E572780062E9BF /* LaunchScreen.storyboard */; };
 		E987471C25E572790062E9BF /* StocksAPIWebChallengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E987471B25E572790062E9BF /* StocksAPIWebChallengeTests.swift */; };
 		E987472725E572790062E9BF /* StocksAPIWebChallengeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E987472625E572790062E9BF /* StocksAPIWebChallengeUITests.swift */; };
+		E987474025E5743F0062E9BF /* StocksTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E987473F25E5743F0062E9BF /* StocksTableViewController.swift */; };
+		E987474525E5766B0062E9BF /* StocksDetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E987474425E5766B0062E9BF /* StocksDetailTableViewController.swift */; };
+		E98DD4D425EC791F0041A529 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = E98DD4D325EC791F0041A529 /* SwiftyJSON.swift */; };
+		E98DD4D925EC7AA40041A529 /* StocksDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E98DD4D825EC7AA40041A529 /* StocksDetailViewController.swift */; };
+		E98DD4E625EC946E0041A529 /* StockDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = E98DD4E525EC946E0041A529 /* StockDetail.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +42,6 @@
 		E987470125E5726E0062E9BF /* StocksAPIWebChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StocksAPIWebChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E987470425E5726E0062E9BF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E987470625E5726E0062E9BF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		E987470825E5726E0062E9BF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		E987470B25E5726E0062E9BF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E987470D25E572780062E9BF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E987471025E572780062E9BF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +52,11 @@
 		E987472225E572790062E9BF /* StocksAPIWebChallengeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StocksAPIWebChallengeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E987472625E572790062E9BF /* StocksAPIWebChallengeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StocksAPIWebChallengeUITests.swift; sourceTree = "<group>"; };
 		E987472825E572790062E9BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E987473F25E5743F0062E9BF /* StocksTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StocksTableViewController.swift; sourceTree = "<group>"; };
+		E987474425E5766B0062E9BF /* StocksDetailTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StocksDetailTableViewController.swift; sourceTree = "<group>"; };
+		E98DD4D325EC791F0041A529 /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
+		E98DD4D825EC7AA40041A529 /* StocksDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StocksDetailViewController.swift; sourceTree = "<group>"; };
+		E98DD4E525EC946E0041A529 /* StockDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockDetail.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,11 +109,15 @@
 			children = (
 				E987470425E5726E0062E9BF /* AppDelegate.swift */,
 				E987470625E5726E0062E9BF /* SceneDelegate.swift */,
-				E987470825E5726E0062E9BF /* ViewController.swift */,
 				E987470A25E5726E0062E9BF /* Main.storyboard */,
+				E987473F25E5743F0062E9BF /* StocksTableViewController.swift */,
+				E987474425E5766B0062E9BF /* StocksDetailTableViewController.swift */,
+				E98DD4D825EC7AA40041A529 /* StocksDetailViewController.swift */,
+				E98DD4E525EC946E0041A529 /* StockDetail.swift */,
 				E987470D25E572780062E9BF /* Assets.xcassets */,
 				E987470F25E572780062E9BF /* LaunchScreen.storyboard */,
 				E987471225E572780062E9BF /* Info.plist */,
+				E98DD4D325EC791F0041A529 /* SwiftyJSON.swift */,
 			);
 			path = StocksAPIWebChallenge;
 			sourceTree = "<group>";
@@ -258,9 +270,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E987470925E5726E0062E9BF /* ViewController.swift in Sources */,
+				E98DD4D925EC7AA40041A529 /* StocksDetailViewController.swift in Sources */,
+				E987474025E5743F0062E9BF /* StocksTableViewController.swift in Sources */,
 				E987470525E5726E0062E9BF /* AppDelegate.swift in Sources */,
+				E98DD4E625EC946E0041A529 /* StockDetail.swift in Sources */,
 				E987470725E5726E0062E9BF /* SceneDelegate.swift in Sources */,
+				E98DD4D425EC791F0041A529 /* SwiftyJSON.swift in Sources */,
+				E987474525E5766B0062E9BF /* StocksDetailTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
